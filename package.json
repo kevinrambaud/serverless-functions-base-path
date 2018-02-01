@@ -1,7 +1,8 @@
 {
   "name": "serverless-functions-base-path",
   "version": "1.0.0",
-  "description": "Easily define a base path where your serverless functions are located",
+  "description":
+    "Easily define a base path where your serverless functions are located",
   "main": "index.js",
   "directories": {
     "example": "example",
@@ -11,26 +12,24 @@
     "coverage": "nyc report --reporter=text-lcov | codecov",
     "format": "prettier-eslint --write \"lib/**/*.js\"",
     "lint": "eslint --fix \"lib/**/*.js\"",
+    "precommit": "lint-staged",
     "test": "nyc --reporter=html --reporter=text mocha lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinrambaud/serverless-functions-base-path.git"
+    "url":
+      "git+https://github.com/kevinrambaud/serverless-functions-base-path.git"
   },
-  "keywords": [
-    "serverless",
-    "functions",
-    "lambda",
-    "path",
-    "base",
-    "path"
-  ],
-  "author": "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
+  "keywords": ["serverless", "functions", "lambda", "path", "base", "path"],
+  "author":
+    "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinrambaud/serverless-functions-base-path/issues"
+    "url":
+      "https://github.com/kevinrambaud/serverless-functions-base-path/issues"
   },
-  "homepage": "https://github.com/kevinrambaud/serverless-functions-base-path#readme",
+  "homepage":
+    "https://github.com/kevinrambaud/serverless-functions-base-path#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
@@ -39,8 +38,13 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.5.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
     "mocha": "^5.0.0",
     "nyc": "^11.4.1",
     "prettier-eslint-cli": "^4.7.0"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "prettier --write", "git add"]
   }
 }
