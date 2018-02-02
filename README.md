@@ -2,6 +2,7 @@
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Travis](https://img.shields.io/travis/kevinrambaud/serverless-functions-base-path.svg)](https://travis-ci.org/kevinrambaud/serverless-functions-base-path)
+[![Codecov](https://img.shields.io/codecov/c/github/kevinrambaud/serverless-functions-base-path.svg)](https://codecov.io/gh/kevinrambaud/serverless-functions-base-path)
 [![npm](https://img.shields.io/npm/v/serverless-functions-base-path.svg)](https://www.npmjs.com/package/serverless-functions-base-path)
 [![npm](https://img.shields.io/npm/dt/serverless-functions-base-path.svg)](https://www.npmjs.com/package/serverless-functions-base-path)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kevinrambaud/serverless-functions-path/master/LICENSE)
