@@ -21,7 +21,15 @@
     "url":
       "git+https://github.com/kevinrambaud/serverless-functions-base-path.git"
   },
-  "keywords": ["serverless", "functions", "lambda", "path", "base", "path"],
+  "keywords": [
+    "serverless",
+    "functions",
+    "plugin",
+    "lambda",
+    "path",
+    "base",
+    "path"
+  ],
   "author":
     "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
   "license": "MIT",
