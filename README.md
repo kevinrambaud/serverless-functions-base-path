@@ -2,6 +2,7 @@
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Travis](https://img.shields.io/travis/kevinrambaud/serverless-functions-base-path.svg)](https://travis-ci.org/kevinrambaud/serverless-functions-base-path)
+[![npm](https://img.shields.io/npm/v/serverless-functions-base-path.svg)](https://www.npmjs.com/package/serverless-functions-base-path)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kevinrambaud/serverless-functions-path/master/LICENSE)
 
 When a project scaffolded with Serverless framework starts to be large or so you simply want to structure in a specific way your project, your `handler` paths can be quite long to write. That's where `serverless-functions-base-path` comes in, this plugin will allow you to define a base path that indicates the location of your lambda function while keeping your `handler` paths as minimal as possible.
