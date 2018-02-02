@@ -92,6 +92,8 @@ serverless invoke locale -f hello
 }
 ```
 
+You can find more usage examples in the example folder.
+
 ## Contributing
 
 1. Fork it!
