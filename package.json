@@ -10,11 +10,11 @@
   },
   "files": ["index.js", "lib"],
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov | codecov",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "format": "prettier-eslint --write \"lib/**/*.js\"",
     "lint": "eslint --fix \"lib/**/*.js\"",
     "precommit": "npm run format && npm run lint && npm test",
-    "test": "nyc --reporter=html --reporter=text mocha lib/**/*.test.js"
+    "test": "nyc mocha lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
