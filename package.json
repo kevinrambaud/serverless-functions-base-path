@@ -8,7 +8,7 @@
     "example": "example",
     "lib": "lib"
   },
-  "files": ["index.js", "lib"],
+  "files": ["index.js", "lib/**/*.js", "!lib/**/*.test.js"],
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "format": "prettier-eslint --write \"lib/**/*.js\"",
