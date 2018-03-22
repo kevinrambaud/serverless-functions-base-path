@@ -1,14 +1,17 @@
 {
   "name": "serverless-functions-base-path",
-  "version": "1.0.8",
-  "description":
-    "Easily define a base path where your serverless functions are located",
+  "version": "1.0.9",
+  "description": "Easily define a base path where your serverless functions are located",
   "main": "index.js",
   "directories": {
     "example": "example",
     "lib": "lib"
   },
-  "files": ["index.js", "lib/**/*.js", "!lib/**/*.test.js"],
+  "files": [
+    "index.js",
+    "lib/**/*.js",
+    "!lib/**/*.test.js"
+  ],
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "format": "prettier-eslint --write \"lib/**/*.js\"",
@@ -18,8 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/kevinrambaud/serverless-functions-base-path.git"
+    "url": "git+https://github.com/kevinrambaud/serverless-functions-base-path.git"
   },
   "keywords": [
     "serverless",
@@ -30,15 +32,12 @@
     "base",
     "path"
   ],
-  "author":
-    "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
+  "author": "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/kevinrambaud/serverless-functions-base-path/issues"
+    "url": "https://github.com/kevinrambaud/serverless-functions-base-path/issues"
   },
-  "homepage":
-    "https://github.com/kevinrambaud/serverless-functions-base-path#readme",
+  "homepage": "https://github.com/kevinrambaud/serverless-functions-base-path#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
@@ -53,6 +52,8 @@
     "prettier-eslint-cli": "^4.7.0"
   },
   "nyc": {
-    "include": ["lib/**/*.js"]
+    "include": [
+      "lib/**/*.js"
+    ]
   }
 }
