@@ -9,15 +9,13 @@
   },
   "files": [
     "index.js",
-    "lib/**/*.js",
-    "!lib/**/*.test.js"
+    "lib/base-path-plugin.js"
   ],
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "format": "prettier-eslint --write \"lib/**/*.js\"",
-    "lint": "eslint --fix \"lib/**/*.js\"",
-    "precommit": "npm run format && npm run lint && npm test",
-    "test": "nyc --all mocha lib/**/*.test.js"
+    "precommit": "npm test",
+    "pretest": "eslint --fix \"lib/**/*.js\"",
+    "test": "nyc mocha lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -29,8 +27,7 @@
     "plugin",
     "lambda",
     "path",
-    "base",
-    "path"
+    "base"
   ],
   "author": "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
   "license": "MIT",
@@ -42,18 +39,28 @@
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
     "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-config-kevinrambaud": "^1.0.1",
     "husky": "^0.14.3",
+    "lint-staged": "^7.0.2",
     "mocha": "^5.0.0",
-    "nyc": "^11.5.0",
-    "prettier-eslint-cli": "^4.7.0"
+    "nyc": "^11.5.0"
+  },
+  "eslintConfig": {
+    "extends": "kevinrambaud"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "nyc": {
     "include": [
       "lib/**/*.js"
-    ]
+    ],
+    "exclude": [
+      "lib/**/*.test.js"
+    ],
+    "all": true
   }
 }
