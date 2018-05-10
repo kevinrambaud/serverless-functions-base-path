@@ -1,6 +1,6 @@
 {
   "name": "serverless-functions-base-path",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Easily define a base path where your serverless functions are located",
   "main": "index.js",
   "directories": {
