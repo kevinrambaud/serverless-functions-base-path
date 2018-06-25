@@ -38,7 +38,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
-    "eslint": "^4.16.0",
+    "eslint": "^5.0.0",
     "eslint-config-kevinrambaud": "^1.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.2",
