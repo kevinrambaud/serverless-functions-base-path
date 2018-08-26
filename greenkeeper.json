@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "example/basic/package.json",
+        "example/with-serverless-offline-plugin/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
