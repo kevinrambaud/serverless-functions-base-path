@@ -13,7 +13,6 @@
   ],
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "precommit": "npm test",
     "pretest": "eslint --fix \"lib/**/*.js\"",
     "test": "nyc mocha lib/**/*.test.js"
   },
@@ -40,13 +39,18 @@
     "codecov": "^3.0.0",
     "eslint": "^5.0.0",
     "eslint-config-kevinrambaud": "^1.0.1",
-    "husky": "^0.14.3",
+    "husky": "^1.2.0",
     "lint-staged": "^8.0.5",
     "mocha": "^5.0.0",
     "nyc": "^13.0.1"
   },
   "eslintConfig": {
     "extends": "kevinrambaud"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "lint-staged": {
     "*.js": [
