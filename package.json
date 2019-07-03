@@ -40,7 +40,7 @@
     "eslint": "^5.0.0",
     "eslint-config-kevinrambaud": "^1.0.1",
     "husky": "^3.0.0",
-    "lint-staged": "^8.0.5",
+    "lint-staged": "^9.0.1",
     "mocha": "^6.0.0",
     "nyc": "^14.0.0"
   },
