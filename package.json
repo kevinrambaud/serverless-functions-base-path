@@ -1,6 +1,6 @@
 {
   "name": "serverless-functions-base-path",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "Easily define a base path where your serverless functions are located",
   "main": "index.js",
   "directories": {
@@ -22,11 +22,13 @@
   },
   "keywords": [
     "serverless",
-    "functions",
-    "plugin",
     "lambda",
+    "aws",
+    "function",
+    "plugin",
+    "base",
     "path",
-    "base"
+    "src"
   ],
   "author": "Kevin Rambaud <kevin.rambaud@gmail.com> (https://twitter.com/kevinrambaud)",
   "license": "MIT",
