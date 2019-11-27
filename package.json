@@ -14,7 +14,7 @@
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "pretest": "eslint --fix \"lib/**/*.js\"",
-    "test": "nyc mocha lib/**/*.test.js"
+    "test": "nyc mocha \"lib/**/*.test.js\""
   },
   "repository": {
     "type": "git",
