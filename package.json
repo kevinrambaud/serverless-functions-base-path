@@ -12,7 +12,7 @@
     "lib/base-path-plugin.js"
   ],
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov",
     "pretest": "eslint --fix \"lib/**/*.js\"",
     "test": "nyc mocha \"lib/**/*.test.js\""
   },
